@@ -16,14 +16,9 @@ These networks are prone to congestion when there is a burst in demand, e.g., as
 The motivation behind reproducing this novel approach is to understand how the resolution of congestion is done in real-time by minimizing network utilization, data transmission delays, and adaptation costs. 
 The approach builds on existing work in dynamic adaptive search-based software engineering (SBSE) to reconfigure an SDN while simultaneously ensuring multiple quality-of-service criteria
 
-### Research Questions
-RQ1: Efficiency and Effectiveness
-
-Can DICES resolve congestion caused by changes in network requests over time?
-
-RQ2 : Scalability
-
-Can DICES resolve congestion promptly for large-scale networks?
+We aim to find the answers for the following research questions through this project:
+1. This research question focuses on answering the efficiency and effectiveness of the DICES algorithm. Can DICES resolve congestion caused by changes in network requests over time?
+2. This research question focuses on answering the scalability of the DICES algorithm. Can DICES resolve congestion promptly for large-scale networks?
 
 ### Methodology
 
