@@ -16,6 +16,14 @@ These networks are prone to congestion when there is a burst in demand, e.g., as
 The motivation behind reproducing this novel approach is to understand how the resolution of congestion is done in real-time by minimizing network utilization, data transmission delays, and adaptation costs. 
 The approach builds on existing work in dynamic adaptive search-based software engineering (SBSE) to reconfigure an SDN while simultaneously ensuring multiple quality-of-service criteria
 
+### Research Questions
+RQ1: Efficiency and Effectiveness
+
+Can DICES resolve congestion caused by changes in network requests over time?
+
+RQ2 : Scalability
+
+Can DICES resolve congestion promptly for large-scale networks?
 
 ### Methodology
 
@@ -25,16 +33,15 @@ We implemented DICES as a java application with a Reactive Forwarding as the bas
 
 
 ### Discussion
-<p float="center" >
-  <img src="images/exp1_delay.png" alt="Average Delay" width="300"/>    <img src="images/packetloss_exp1.png" alt="Average Packet Loss" width="305"/>  
- 
 
-<p float="center" >
-  <img src="images/exp2_links.png" alt="Example of an Emergency Monitoring System IoT Network" width="300"/>   
-  <img src="images/exp2_links.png" alt="Example of an Emergency Monitoring System IoT Network" width="300"/>   
+| ![](images/exp1_delay.png) | ![](images/exp2_links.png) | ![](images/exp2_request.png)|
+|:--:| :--: | :--: |
+| *Figure 1* | *Figure 2* | *Figure 3* |
 
-</p>
-
+From the first figure we see that the average delay in milliseconds for DICES is higher as compared to the experiment run without DICES for a congested network. This can be attributed to the time taken in finding the optimal flow so that the maximum utilization of the network can be minimized. The results obtained are comparable to the results in the paper. 
+From second figure we see that the average packet loss in DICES is much lesser compared to ONOS Reactive Forwarding, indicating that DICES indeed helps in congestion control of the network.
+From Figure 3 and 4, we can see that the execution time increases approximately in a linear fashion with the increase in the number of requests and network size. 
+This answers our RQ2 stating that DICES scales to real-world systems.
 
 
 ### Conclusion
