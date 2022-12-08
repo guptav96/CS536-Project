@@ -2,7 +2,7 @@
 
 # Reproducing "Dynamic Adaptation of Software-defined Networks for IoT Systems: A Search-based Approach"
 
-**Members:** [Agresh Bharadwaj](https://www.linkedin.com/in/agreshb/), [Ayush Garg](linkedin.com/in/ayushgarg99/), [Tulika Sureka](https://www.linkedin.com/in/tulikasureka/), [Vishnu Teja Narapareddy](https://www.linkedin.com/in/vishnu-teja-n/), and [Vivek Gupta](https://www.linkedin.com/in/guptav96/)
+**Members:** [Agresh Bharadwaj](https://www.linkedin.com/in/agreshb/), [Ayush Garg](https://www.linkedin.com/in/ayushgarg99/), [Tulika Sureka](https://www.linkedin.com/in/tulikasureka/), [Vishnu Teja Narapareddy](https://www.linkedin.com/in/vishnu-teja-n/), and [Vivek Gupta](https://www.linkedin.com/in/guptav96/)
 
 ### Introduction
 IoT-enabled applications depend on a communication network for transmitting large volumes of data in unpredictable and changing environments. 
@@ -24,7 +24,7 @@ We aim to find the answers for the following research questions through this pro
 
 We setup the required services on the aws ec2 (8 GiB of CPU, 2vCPUs,and 30 GB of memory) instance provided through the lab. We implement DICES as an application that runs on top of ONOS (Open Network Operating System). The project uses Mininet, a network emulator that creates a virtual network, running real SDN-switch and application programs on a single machine for easy testing and prototyping. We also use D-ITG (Distributed Internet Traffic Generator), a traffic generation and monitoring tool that replicates real network traffic. 
 
-We implemented DICES as a java application with a Reactive Forwarding as the base code. We modified the existing reactive forwarding code in both activate and deactivate steps. In the activate step, we setup all the dependent classes and initialize these values and create a new DynamicAdaptiveControlTask (TimerTask) object. We schedule the task as a timer task run on parallel thread. We modify the existing link weight paths to inlcude our DICES generated DynamicLinkWeights when calculating the paths in reactive forwarding packet processor. In the deactivate method, we also ensure to stop the DynamicAdaptiveControlTask. This completes the setup of DICES and its integration with reactive forwarding. The full implemnetation of the DICES algorihtm can be found in the project report.
+We implemented DICES as a java application with a Reactive Forwarding as the base code. We modified the existing reactive forwarding code in both activate and deactivate steps. In the activate step, we setup all the dependent classes and initialize these values and create a new DynamicAdaptiveControlTask (TimerTask) object. We schedule the task as a timer task run on parallel thread. We modify the existing link weight paths to inlcude our DICES generated DynamicLinkWeights when calculating the paths in reactive forwarding packet processor. In the deactivate method, we also ensure to stop the DynamicAdaptiveControlTask. This completes the setup of DICES and its integration with reactive forwarding. The full implementation of the DICES algorithm can be found in the project report.
 
 
 ### Discussion
@@ -38,7 +38,7 @@ We implemented DICES as a java application with a Reactive Forwarding as the bas
 |:--:| :--: | 
 | *Fig 2: Avg Packet loss* | *Fig 4: Request vs Time* | 
 
-From the Figure 1 we see that the average delay in milliseconds for DICES is higher as compared to the experiment run without DICES for a congested network. This can be attributed to the time taken in finding the optimal flow so that the maximum utilization of the network can be minimized. The results obtained are comparable to the results in the paper. 
+From the Figure 1, we see that the average delay in milliseconds for DICES is higher as compared to the experiment run without DICES for a congested network. This can be attributed to the time taken in finding the optimal flow so that the maximum utilization of the network can be minimized. The results obtained are comparable to the results in the paper. 
 Figure 2 shows us the average packet loss in DICES is much lesser compared to ONOS Reactive Forwarding, indicating that DICES indeed helps in congestion control of the network.
 From Figure 3 and 4, we can see that the execution time increases approximately in a linear fashion with the increase in the number of requests and network size. 
 This answers our RQ2 stating that DICES scales to real-world systems.
