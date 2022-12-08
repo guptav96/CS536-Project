@@ -14,7 +14,7 @@ These networks are prone to congestion when there is a burst in demand, e.g., as
 
 ### Motivation
 The motivation behind reproducing this novel approach is to understand how the resolution of congestion is done in real-time by minimizing network utilization, data transmission delays, and adaptation costs. 
-The approach builds on existing work in dynamic adaptive search-based software engineering (SBSE) to reconfigure an SDN while simultaneously ensuring multiple quality-of-service criteria
+The approach builds on existing work in dynamic adaptive search-based software engineering (SBSE) to reconfigure an SDN while simultaneously ensuring multiple quality-of-service criteria.
 
 We aim to find the answers for the following research questions through this project:
 1. This research question focuses on answering the efficiency and effectiveness of the DICES algorithm. Can DICES resolve congestion caused by changes in network requests over time?
@@ -22,7 +22,7 @@ We aim to find the answers for the following research questions through this pro
 
 ### Methodology
 
-We setup the required services on the aws ec2 (GiB of CPU, 2vCPUs,and 30 GB of memory) instance provided through the lab. We implement DICES as an application that runs on top of ONOS (Open Network Operating System). The project uses Mininet, a network emulator that creates a virtual network, running real SDN-switch and application programs on a single machine for easy testing and prototyping. We also use D-ITG (Distributed Internet Traffic Generator), a traffic generation and monitoring tool that replicates real network traffic. 
+We setup the required services on the aws ec2 (8 GiB of CPU, 2vCPUs,and 30 GB of memory) instance provided through the lab. We implement DICES as an application that runs on top of ONOS (Open Network Operating System). The project uses Mininet, a network emulator that creates a virtual network, running real SDN-switch and application programs on a single machine for easy testing and prototyping. We also use D-ITG (Distributed Internet Traffic Generator), a traffic generation and monitoring tool that replicates real network traffic. 
 
 We implemented DICES as a java application with a Reactive Forwarding as the base code. We modified the existing reactive forwarding code in both activate and deactivate steps. In the activate step, we setup all the dependent classes and initialize these values and create a new DynamicAdaptiveControlTask (TimerTask) object. We schedule the task as a timer task run on parallel thread. We modify the existing link weight paths to inlcude our DICES generated DynamicLinkWeights when calculating the paths in reactive forwarding packet processor. In the deactivate method, we also ensure to stop the DynamicAdaptiveControlTask. This completes the setup of DICES and its integration with reactive forwarding. The full implemnetation of the DICES algorihtm can be found in the project report.
 
