@@ -34,14 +34,14 @@ We implemented DICES as a java application with a Reactive Forwarding as the bas
 
 ### Discussion
 
-| ![](images/exp1_delay.png) | ![](images/packetloss_exp1.png) | 
+| ![](images/exp1_delay.png) | ![](images/exp2_links.png) | 
 |:--:| :--: | 
-| *Figure 1* | *Figure 2* | 
+| *Figure 1* | *Figure 3* | 
 
 
-| ![](images/exp2_request.png) | ![](images/exp2_links.png) | 
+| ![](images/packetloss_exp1.png) | ![](images/exp2_request.png) | 
 |:--:| :--: | 
-| *Figure 3* | *Figure 4* | 
+| *Figure 2* | *Figure 4* | 
 
 From the Figure 1 we see that the average delay in milliseconds for DICES is higher as compared to the experiment run without DICES for a congested network. This can be attributed to the time taken in finding the optimal flow so that the maximum utilization of the network can be minimized. The results obtained are comparable to the results in the paper. 
 Figure 2 shows us the average packet loss in DICES is much lesser compared to ONOS Reactive Forwarding, indicating that DICES indeed helps in congestion control of the network.
