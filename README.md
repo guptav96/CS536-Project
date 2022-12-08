@@ -25,16 +25,10 @@ We implemented DICES as a java application with a Reactive Forwarding as the bas
 
 
 ### Discussion
-<p float="center" >
-  <img src="images/exp1_delay.png" alt="Average Delay" width="300"/>    <img src="images/packetloss_exp1.png" alt="Average Packet Loss" width="305"/>  
- 
 
-<p float="center" >
-  <img src="images/exp2_links.png" alt="Example of an Emergency Monitoring System IoT Network" width="300"/>   
-  <img src="images/exp2_links.png" alt="Example of an Emergency Monitoring System IoT Network" width="300"/>   
-
-</p>
-
+| ![](images/exp1_delay.png) | ![](images/exp2_links.png) | ![](images/exp2_links.png)|
+|:--:| :--: | :--: |
+| *Figure 1* | *Figure 2* | *Figure 3* |
 
 
 ### Conclusion
