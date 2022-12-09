@@ -33,14 +33,35 @@ We implemented DICES as a java application with a Reactive Forwarding as the bas
 
 ### Discussion
 
-| ![](images/exp1_delay.png) | ![](images/exp2_links.png) | 
-|:--:| :--: | 
-| *Fig 1: Average Delay* | *Fig 3: Links vs Time* | 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center;width: 50%;"><img src="/CS536-Project/images/exp1_delay.png" alt=""></th>
+      <th style="text-align: center"><img src="/CS536-Project/images/exp2_links.png" alt=""></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Fig 1: Average Delay</em></td>
+      <td style="text-align: center"><em>Fig 3: Links vs Time</em></td>
+    </tr>
+  </tbody>
+</table>
 
-
-| ![](images/packetloss_exp1.png) | ![](images/exp2_request.png) | 
-|:--:| :--: | 
-| *Fig 2: Avg Packet loss* | *Fig 4: Request vs Time* | 
+<table>
+  <thead>
+    <tr>
+      <th style="width: 50%;text-align: center"><img src="/CS536-Project/images/packetloss_exp1.png" alt=""></th>
+      <th style="text-align: center"><img src="/CS536-Project/images/exp2_request.png" alt=""></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Fig 2: Avg Packet loss</em></td>
+      <td style="text-align: center"><em>Fig 4: Request vs Time</em></td>
+    </tr>
+  </tbody>
+</table>
 
 From the Figure 1, we see that the average delay in milliseconds for DICES is higher as compared to the experiment run without DICES for a congested network. This can be attributed to the time taken in finding the optimal flow so that the maximum utilization of the network can be minimized. The results obtained are comparable to the results in the paper. 
 Figure 2 shows us the average packet loss in DICES is much lesser compared to ONOS Reactive Forwarding, indicating that DICES indeed helps in congestion control of the network.
