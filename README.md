@@ -36,8 +36,8 @@ We implemented DICES as a java application with a Reactive Forwarding as the bas
 <table>
   <thead>
     <tr>
-      <th style="text-align: center;width: 50%;"><img src="/CS536-Project/images/exp1_delay.png" alt=""></th>
-      <th style="text-align: center"><img src="/CS536-Project/images/exp2_links.png" alt=""></th>
+      <th style="text-align: center;width: 50%;"><img src="images/exp1_delay.png" alt=""></th>
+      <th style="text-align: center"><img src="images/exp2_links.png" alt=""></th>
     </tr>
   </thead>
   <tbody>
@@ -51,8 +51,8 @@ We implemented DICES as a java application with a Reactive Forwarding as the bas
 <table>
   <thead>
     <tr>
-      <th style="width: 50%;text-align: center"><img src="/CS536-Project/images/packetloss_exp1.png" alt=""></th>
-      <th style="text-align: center"><img src="/CS536-Project/images/exp2_request.png" alt=""></th>
+      <th style="width: 50%;text-align: center"><img src="images/packetloss_exp1.png" alt=""></th>
+      <th style="text-align: center"><img src="images/exp2_request.png" alt=""></th>
     </tr>
   </thead>
   <tbody>
