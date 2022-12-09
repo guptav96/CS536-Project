@@ -7,10 +7,14 @@
 ### Introduction
 IoT-enabled applications depend on a communication network for transmitting large volumes of data in unpredictable and changing environments. 
 These networks are prone to congestion when there is a burst in demand, e.g., as an emergency situation is unfolding, and therefore rely on configurable software-defined networks (SDN). The goal of this project is to reproduce the novel approach proposed in Dynamic Adaptation of Software-defined Networks for IoT Systems: A Search-based Approach (DICES) which is a dynamic adaptive SDN configuration approach for IoT systems.
-<p float="center" >
-  <img src="images/EMS_DESIGN.png" alt="Example of an Emergency Monitoring System IoT Network" width="400"/>   
- 
-</p>
+
+<img src="images/EMS_DESIGN.png" alt="Example of an Emergency Monitoring System IoT Network" style="
+    float: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+"/>
 
 ### Motivation
 The motivation behind reproducing this novel approach is to understand how the resolution of congestion is done in real-time by minimizing network utilization, data transmission delays, and adaptation costs. 
